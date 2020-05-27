@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_05_27_175102) do
+ActiveRecord::Schema.define(version: 2020_05_27_222215) do
 
   create_table "concept", force: :cascade do |t|
     t.text "data_structure"
@@ -25,6 +25,11 @@ ActiveRecord::Schema.define(version: 2020_05_27_175102) do
   end
 
   create_table "student", force: :cascade do |t|
+    t.string "name"
+    t.text "track"
+  end
+
+  create_table "students", force: :cascade do |t|
     t.string "name"
     t.text "track"
   end
